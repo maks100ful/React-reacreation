@@ -1,0 +1,31 @@
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .image-col {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .photo {
+    width: 132px;
+    height: 132px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .image-col img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .image-col p {
+    margin-top: 10px;
+  }

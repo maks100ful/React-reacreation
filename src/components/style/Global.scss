@@ -1,0 +1,119 @@
+$primary-color: #4CAF50;
+$secondary-color: #3e8e41;
+$background-color: rgb(255,255,255,0.2);
+$text-color: #333;
+$gradient-start-color: #3ceac2;
+$gradient-end-color: #05eb80;
+
+
+header {
+    background-color: $text-color;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  
+    .company-icon {
+      width: 50px; /* Add width and height */
+      height: 50px;
+      margin-right: 10px; /* Add margin */
+      display: flex;
+      justify-content: center;
+      caret-color: transparent;
+    }
+  
+    .search-box {
+      flex-grow: 1;
+      margin-right: 10px; /* Add margin */
+    }
+  
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      font-size: 16px;
+    }
+  
+    .auth-buttons {
+      display: flex;
+      flex-direction: row;
+      margin-left: 10px;
+    }
+  
+    button {
+      background-color: $primary-color;
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 0 5px; /* Add margin */
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    #cat-icon {
+      font-size: 40px;
+      color: white;
+      top: 50%;
+      left: 50%;
+    }
+  
+    .profile-mini{
+      background-color: aqua;
+      border-radius: 50%;
+      height: 50px;
+      width: auto;
+      overflow: hidden;
+      border: none;
+      outline: none;
+      img{
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    header {
+      flex-direction: column;
+      .profile-mini{
+        margin-top: 5px;
+      }
+    }
+  
+    .auth-buttons{
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    
+  }
+
+  html{
+    height: 100%;
+    background: url(./617743.jpg) fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    margin: 8px;
+  }
+
+  footer {
+    background-color: $text-color;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    flex: 0 0 auto;
+  }
